@@ -1,0 +1,23 @@
+{
+  "name": "magewirephp/magewire-requirejs",
+  "description": "A Magento 2 module which makes Magewire compatible with RequireJS based themes",
+  "version": "1.0.0",
+  "type": "magento2-module",
+  "require": {
+    "magewirephp/magewire": "dev-develop"
+  },
+  "authors": [
+    {
+      "name": "Willem Poortman"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "files": [
+      "src/registration.php"
+    ],
+    "psr-4": {
+      "Magewirephp\\MagewireRequireJS\\": "src/"
+    }
+  }
+}
