@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "type": "magento2-module",
   "require": {
-    "magewirephp/magewire": "dev-develop"
+    "magewirephp/magewire": "^1.0"
   },
   "authors": [
     {
       "name": "Willem Poortman"
     }
   ],
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "autoload": {
     "files": [
       "src/registration.php"
