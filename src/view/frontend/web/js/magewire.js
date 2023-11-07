@@ -16,6 +16,11 @@ define([
 
     window.livewire_token = $.mage.cookies.get('form_key')
 
+    // In the backend we need another variable to get the form key
+    if (typeof FORM_KEY !== 'undefined') {
+        window.livewire_token = FORM_KEY
+    }
+
     return function (config) {
         window.magewire.devTools(config.app_debug ?? false)
         window.livewire_app_url = config.app_url ?? '/magewire/post'
