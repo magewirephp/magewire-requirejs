@@ -14,13 +14,12 @@ use Magewirephp\Magewire\ViewModel\Magewire;
 
 $magewireScripts = $block->getData('viewModel');
 ?>
-<script type="text/x-magento-init">
-{
-    "*": {
-        "Magewirephp_MagewireRequireJs/js/magewire": {
+<script>
+    require(['Magewirephp_MagewireRequireJs/js/magewire'], function (magewire) {
+        magewire({
             "app_url": "<?= $escaper->escapeUrl($magewireScripts->getApplicationUrl()) ?>",
             "app_debug": <?= $escaper->escapeJs($magewireScripts->isDeveloperMode() ? 'true' : 'false') ?>
-        }
-    }
-}
+        });
+    });
 </script>
+
