@@ -1,4 +1,7 @@
 # Magewire Require JS
+
+> This module is no longer maintained and will not receive further updates. It is still available for projects running [Magewire V1.x](https://github.com/magewirephp/magewire/tree/1.x), but no new features, bug fixes, or security updates are planned.
+
 [![Latest Stable Version](http://poser.pugx.org/magewirephp/magewire-requirejs/v)](https://packagist.org/packages/magewirephp/magewire-requirejs)
 [![Total Downloads](http://poser.pugx.org/magewirephp/magewire-requirejs/downloads)](https://packagist.org/packages/magewirephp/magewire-requirejs)
 [![License](http://poser.pugx.org/magewirephp/magewire-requirejs/license)](https://packagist.org/packages/magewirephp/magewire)
